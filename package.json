@@ -1,5 +1,5 @@
 {
-  "name": "tpapi",
+  "name": "tl-api",
   "version": "0.0.2",
   "type": "module",
   "description": "TPLink Router API",
