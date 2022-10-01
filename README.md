@@ -5,11 +5,11 @@ Tested on `TL-MR6400` should work on others as well
 ## Example
 
 ```shell
-$ npm i tpapi
+$ npm i tl-api
 
 # or
 
-$ yarn add tpapi
+$ yarn add tl-api
 ```
 
 ```javascript
