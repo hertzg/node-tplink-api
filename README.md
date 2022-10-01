@@ -4,6 +4,14 @@ Tested on `TL-MR6400` should work on others as well
 
 ## Example
 
+```shell
+$ npm i tpapi
+
+# or
+
+$ yarn add tpapi
+```
+
 ```javascript
 import { ACT, authenticate, execute } from "tpapi";
 
@@ -89,21 +97,27 @@ const performLogout = [[ACT.CGI, "cgi/logout"]];
 ```
 
 #### Response
+
 ```json5
 {
-  error: 0, // error code or 0 if success
-  actions: [ // actions array is in the same order as the actions to be performed
+  error: 0,
+  // error code or 0 if success
+  actions: [
+    // actions array is in the same order as the actions to be performed
     {
-      req: [ 1, 'LTE_BANDINFO' ], // original actions that got executed
-      res: { // resulting object or an array if the request was ACT.GS or ACT.GL
-        stack: '0,0,0,0,0,0',
-        attributes: { // Attributes related to this particular request
-          LTE_RadioInterface: '8',
-          LTE_ActiveBand: '122',
-          LTE_ActiveChannel: '1699'
-        }
-      }
-    }
-  ]
+      req: [1, "LTE_BANDINFO"],
+      // original actions that got executed
+      res: {
+        // resulting object or an array if the request was ACT.GS or ACT.GL
+        stack: "0,0,0,0,0,0",
+        attributes: {
+          // Attributes related to this particular request
+          LTE_RadioInterface: "8",
+          LTE_ActiveBand: "122",
+          LTE_ActiveChannel: "1699",
+        },
+      },
+    },
+  ],
 }
 ```
