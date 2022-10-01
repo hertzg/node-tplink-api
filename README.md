@@ -13,7 +13,7 @@ $ yarn add tpapi
 ```
 
 ```javascript
-import { ACT, authenticate, execute } from "tpapi";
+import { ACT, authenticate, execute } from "tl-api";
 
 const baseUrl = "http://192.168.1.1";
 
