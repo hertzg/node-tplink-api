@@ -5,7 +5,7 @@ Tested on `TL-MR6400` should work on others as well
 ## Example
 
 ```javascript
-import { ACT, authenticate, execute } from "tplink-api";
+import { ACT, authenticate, execute } from "tpapi";
 
 const baseUrl = "http://192.168.1.1";
 

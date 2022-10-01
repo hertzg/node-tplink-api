@@ -1,5 +1,5 @@
 {
-  "name": "tplink-api",
+  "name": "tpapi",
   "version": "0.0.1",
   "type": "module",
   "description": "TPLink Router API",
@@ -7,8 +7,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "George Kotchlamazashvili",
+  "files": [
+    "src/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hertzg/node-tplink-api"
+  },
+  "homepage": "",
+  "keywords": [
+    "tplink",
+    "api",
+    "gdpr",
+    "cgi_gdpr",
+    "mr6400",
+    "tl-mr6400",
+    "tplink sms",
+    "sms"
+  ],
+  "author": "George Kotchlamazashvili <georgedot@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "undici": "5.10.0"
