@@ -59,6 +59,26 @@ Once authenticated you will need to use the `execute` function and pass it an ar
 
 Actions is an array of operations you want to perform. Each operation is defined as an array in the following format
 
+You can login into your router and hook into data encrypt and decrypt methods with the following snippet.
+```
+$.Iencryptor.AESDecrypt_backup = $.Iencryptor.AESDecrypt;
+$.Iencryptor.AESEncrypt_backup = $.Iencryptor.AESEncrypt;
+$.Iencryptor.AESDecrypt = function(data) {
+	let decrypted = $.Iencryptor.AESDecrypt_backup(data);
+	console.log("RECV:\n" + decrypted);
+	return decrypted;
+}
+$.Iencryptor.AESEncrypt = function(data) {
+	console.log("SEND:\n" + data);
+	return $.Iencryptor.AESEncrypt_backup(data);
+}
+```
+
+This will log `RECV:` & `SEND:` message before encrypting and decrypting payload, and you can take a note of `<actionType>, <actionOperationId>, <actionAttributesOrFields>, <stack>, <pStack>` values when you perform specific actions in the UI.
+
+You can see some values described in this document in the Example section and also in `example.js`.
+
+
 #### Format:
 
 ```
