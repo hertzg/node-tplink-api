@@ -1,5 +1,3 @@
-import { fetch } from "./fetch.js";
-
 export const _extractVariables = (js) => {
   return js
     .split("\n")
