@@ -5,7 +5,7 @@
   "description": "TPLink Router API",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test"
   },
   "files": [
     "src/*"
@@ -20,17 +20,23 @@
     "api",
     "gdpr",
     "cgi_gdpr",
+    "archer",
+    "tl-archer",
+    "vr900v",
     "mr6400",
     "tl-mr6400",
+    "archer-vr900v",
+    "tl-archer-vr900v",
+    "tl-vr900v",
     "tplink sms",
     "sms"
   ],
   "author": "George Kotchlamazashvili <georgedot@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "undici": "5.10.0"
+    "undici": "5.22.1"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "2.8.8"
   }
 }
