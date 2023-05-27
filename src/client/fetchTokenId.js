@@ -1,5 +1,3 @@
-import { fetch } from "./fetch.js";
-
 export const fetchTokenId = async (
   baseUrl,
   { authTimes = 1, sessionId } = {}

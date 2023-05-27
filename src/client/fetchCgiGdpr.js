@@ -1,5 +1,3 @@
-import { fetch } from "./fetch.js";
-
 export const fetchCgiGdpr = async (
   baseUrl,
   payload,
