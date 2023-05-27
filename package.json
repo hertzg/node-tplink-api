@@ -4,6 +4,9 @@
   "type": "module",
   "description": "TPLink Router API",
   "main": "src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "test": "node --test"
   },
@@ -33,9 +36,6 @@
   ],
   "author": "George Kotchlamazashvili <georgedot@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "undici": "5.22.1"
-  },
   "devDependencies": {
     "prettier": "2.8.8"
   }

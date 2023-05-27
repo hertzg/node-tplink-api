@@ -1,5 +1,3 @@
-import { fetch } from "./fetch.js";
-
 const MARKER = '<script type="text/javascript">';
 
 export const fetchInfo = async (baseUrl) => {

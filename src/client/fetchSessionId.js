@@ -1,5 +1,3 @@
-import { fetch } from "./fetch.js";
-
 export const fetchSessionId = async (
   baseUrl,
   { encryption, sequence, username = "admin", password }

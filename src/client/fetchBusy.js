@@ -1,5 +1,3 @@
-import { fetch } from "./fetch.js";
-
 export const fetchBusy = async (baseUrl) => {
   const res = await fetch(new URL("cgi/getBusy", baseUrl).href, {
     method: "POST",
