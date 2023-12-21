@@ -1,8 +1,9 @@
 # TP-Link Router API (EU GDPR versions)
 
 Tested on the following units should work on others as well
-* `TL-MR6000`
-* `Archer VR900v` (https://github.com/hertzg/node-tplink-api/pull/2)
+* ✔️ `TL-MR6000`
+* ✔️ `Archer VR900v` (https://github.com/hertzg/node-tplink-api/pull/2)
+* ⚠️ `Archer MR6000` Not working (https://github.com/hertzg/node-tplink-api/issues/5)
 
 If this works on your device but is not listed here please create an issue or a pr updating the list
 
