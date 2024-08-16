@@ -4,6 +4,7 @@ Tested on the following units should work on others as well
 * ✔️ `TL-MR6400`
 * ✔️ `Archer VR900v` (https://github.com/hertzg/node-tplink-api/pull/2)
 * ❔ `Archer MR600`  (https://github.com/hertzg/node-tplink-api/issues/5)
+* ✔️ `TL-MR6500v` (https://github.com/hertzg/node-tplink-api/discussions/7)
 
 If this works on your device but is not listed here please create an issue or a pr updating the list
 
